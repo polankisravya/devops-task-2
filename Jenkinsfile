@@ -12,7 +12,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo 'Running container for Task 2...'
-                sh 'docker run -d -p 8080:80 --name polanki-nginx-container polanki-nginx-site'
+                sh 'docker run -d -p 8081:80 --name polanki-nginx-container polanki-nginx-site'
             }
         }
     }
